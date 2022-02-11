@@ -57,7 +57,7 @@ static public void StringAnaliser(String word1, String word2, int num)
      System.out.println(line2);
    }
    
-    String word0 = word1.toUpper();
+    String word0 = word1.toUpperCase();
     if(word2.equalsIgnoreCase(word2))
    {
     System.out.println(line2);
@@ -71,7 +71,7 @@ static public void StringAnaliser(String word1, String word2, int num)
     System.out.println(line);
    }
    
-    String word = word0.toLower();
+    String word = word0.toLowerCase();
     System.out.println("\n" + line2);
     System.out.println("\033[1;34m>> This was \'word1\' in upper case: " + word0 + ".\033[0m");
     System.out.println("\033[1;31m>> And this is \'word1\' back to lower case: " + word + ".\033[0m");
