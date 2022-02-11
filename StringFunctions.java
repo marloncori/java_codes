@@ -1,5 +1,5 @@
-import java.io.*
-import java.utils.*
+import java.io.*;
+import java.util.*;
 
 public class StringFunctions 
 {
@@ -11,15 +11,14 @@ public class StringFunctions
      static String str4 = "       C++ and Python are both import proglangs.       ";
      final static int num = 33;
     
-     public static void Main(String args[])
+     public static void main(String args[])
      {
        StringAnaliser(str1, str2, val);
        StringAnaliser(str3, str4, num);
      
      }
-}
 
-public void StringAnaliser(String word1, String word2, int num)
+static public void StringAnaliser(String word1, String word2, int num)
 {
    String line = "\033[1;32m=================================================\033[0m";
    String line2 = "\033[1;34m=================================================\033[0m";
@@ -61,7 +60,6 @@ public void StringAnaliser(String word1, String word2, int num)
     String word0 = word1.toUpper();
     if(word2.equalsIgnoreCase(word2))
    {
-    String line = "\033[1;32m=================================================\033[0m";
     System.out.println(line2);
     System.out.println("\033[1;35m>> The var \'word1\' is equal to var \'word2\'! <<\033[0m");
     System.out.println("  And their contents is: " + word1);
